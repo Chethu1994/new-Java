@@ -1,0 +1,28 @@
+package javaPractice;
+
+public class SeperateSameNumbers2 {
+
+	public static void main(String[] args) {
+		int[] a = {3,0,2,0,0,1};
+		int[] b= new int[a.length];
+		
+		int n=0;
+		int m= a.length-1;
+		
+		for(int i=0; i<a.length; i++)
+		{
+			if(a[i]!=0) {
+				b[n]=a[i];
+				n++;
+			}
+			else {
+				b[m]=a[i];
+				m--;
+			}
+		}
+		for(int i=0;i<b.length;i++)
+		{
+			System.out.println(b[i]);
+	}
+	}
+}
